@@ -10,10 +10,6 @@ import {
 import UserPageComponent from './component';
 
 class UserPage extends Component {
-  componentWillMount() {
-    if (!this.props.userData) this.props.history.push('/');
-  }
-
   componentDidMount() {
     this.props.setUser(this.props.match.params.id);
   }

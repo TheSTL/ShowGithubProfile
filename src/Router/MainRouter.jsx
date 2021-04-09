@@ -8,8 +8,6 @@ import Repository from '../Repository/container';
 
 class MainRouter extends Component {
   render() {
-    console.log(this.props);
-
     return (
       <Switch>
         <Route exact path="/" component={MainPage} />

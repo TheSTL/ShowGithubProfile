@@ -4,10 +4,6 @@ import { connect } from 'react-redux';
 import { AsyncSetFollowersFollowingRepo } from '../utils/action';
 
 class Repository extends Component {
-  // eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
     const url = 'https://api.github.com/users';
     const data = {
